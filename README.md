@@ -38,10 +38,9 @@ The package is intended for researchers, statisticians, reliability engineers, a
 
   ```r
 # install.packages("remotes")
-remotes::install_github("YOUR_GITHUB_USERNAME/SujathaDist")
+remotes::install_github("hosenur72/SujathaDist")
 ```
 
-Replace `YOUR_GITHUB_USERNAME` with your GitHub username.
 
 ### Install from Source
 
