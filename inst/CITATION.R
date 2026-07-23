@@ -17,3 +17,7 @@ citEntry(
       "R package version 0.1.0."
     )
 )
+usethis::use_git()
+usethis::use_github()
+gitcreds::gitcreds_set()
+usethis::use_github()
