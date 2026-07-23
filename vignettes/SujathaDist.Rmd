@@ -1,0 +1,73 @@
+---
+title: "SujathaDist: An R Package for the Sujatha Distribution"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{SujathaDist}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include = FALSE}
+library(SujathaDist)
+set.seed(123)
+```
+
+# Introduction
+
+The **SujathaDist** package provides functions for working with the Sujatha distribution, including
+
+- Density function
+- Distribution function
+- Quantile function
+- Random number generation
+- Maximum likelihood estimation
+- Goodness-of-fit statistics
+
+# Density Function
+
+```{r}
+dsujatha(1, theta = 2)
+```
+
+# Distribution Function
+
+```{r}
+psujatha(1, theta = 2)
+```
+
+# Quantile Function
+
+```{r}
+qsujatha(0.5, theta = 2)
+```
+
+# Random Number Generation
+
+```{r}
+x <- rsujatha(100, theta = 2)
+head(x)
+```
+
+# Parameter Estimation
+
+```{r}
+fit <- fitsujatha(x)
+
+fit
+```
+
+# Summary
+
+```{r}
+summary(fit)
+```
+
+# Goodness-of-Fit
+
+```{r}
+gofsujatha(fit)
+```
+
+# Conclusion
+
+The package provides a complete framework for inference on the Sujatha distribution.

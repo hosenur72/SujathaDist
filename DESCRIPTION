@@ -1,0 +1,33 @@
+Package: SujathaDist
+Type: Package
+Title: Statistical Methods for the Sujatha Distribution
+Version: 0.1.0
+Date: 2026-07-23
+Authors@R:
+    person(
+      given = "Hosenur Rahman",
+      family = "Prodhani",
+      email = "hosenur72@gmail.com",
+      role = c("aut", "cre")
+    )
+Description: Provides functions for the Sujatha distribution,
+    including probability density, cumulative distribution,
+    quantile function, random number generation,
+    maximum likelihood estimation,
+    confidence intervals,
+    model selection criteria,
+    and goodness-of-fit procedures.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports:
+    stats,
+    graphics
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
